@@ -1,0 +1,47 @@
+body{
+  /* background-color: #E7B6CF; */
+  background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/10396783476766/C-0292-Original-Barista-Scuro-Zoom-1448x892-1-.jpg");
+  z-index: -1;
+  color:  white;
+  font-size: 20px;
+}
+ul{
+    width: 35%;
+}
+h1 {
+    margin: auto;
+}
+.complete{
+    text-decoration: line-through;
+    color: grey;
+}
+
+h3{
+  margin-top: 30px;
+}
+h5{
+    margin-top: 65px;
+}
+a{
+    padding-right: 15px;
+    color: #E7B6CF;
+}
+.messages{
+    background-color: rgba(42,14,30,0.3)
+}
+span{
+    padding-right: 10px;
+}
+#container{
+    float: right;
+    margin-right: 10%;
+    margin-top: -5%;
+}
+/* #gifContainer{
+    background-image: url("giphy.gif");
+    background-size: 100px;
+    background-repeat: no-repeat;
+} */
+.formSubmit{
+    margin-top: 45px;
+}

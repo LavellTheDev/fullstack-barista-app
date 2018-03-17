@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee App</title>
+  <link rel="stylesheet" href="fontawesome-free-5.0.4/web-fonts-with-css/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Coffee House</h1>
+
+  <h3>Order List</h3>
+  <ul class="messages">
+  <% for(var i=0; i<messages.length; i++) {%>
+    <li class="message">
+    <span><i class="far fa-coffee"></i></span>
+      <span> <%= messages[i].name %></span>
+      <span><%= messages[i].order %></span>
+      <span><%= messages[i].complete %></span>
+      <span><i class="far fa-check-circle"></i></span>
+      <span><i class="fa fa-trash"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <h2>Orders</h2>
+
+  <form action="/messages" method="POST">
+    <input type="text" placeholder="Customer name..." name="name">
+    <input type="text" placeholder="Customer order..." name="order">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
